@@ -1,0 +1,29 @@
+<div class=" container">
+ 
+     <div class="col-mt-8">
+        <table class="table">
+            <thead>
+                <td>STT</td>
+                <td>Email</td>
+                <td>Name</td>   
+                <td>Img</td>
+            </thead>
+            <tbody>
+                {{#each user}}
+                <tr>
+                <td>1</td>
+                <td>{{this.email}}</td>
+                <td>{{this.name}}</td>
+                <td>
+                    <img class="rounded" style="width: 50px; height: 50px;" src="{{this.img}}" alt="">
+                </td>
+                <td><a href="/user/{{this._id}}/edit">Sua</a></td>
+                <td><a href="/user/{{this._id}}/delete">Xoa</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+     </div>
+     <div class="col-mt-4"></div>
+
+</div>

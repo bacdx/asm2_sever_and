@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+    <form method="POST" action="/product/{{product._id}}/update?_method=PUT">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="name">name</label>
+      <input type="text" name="name" value="{{product.name}}" class="form-control" id="inputEmail4" placeholder="name">
+    </div>
+    
+     <div class="form-group col-md-6">
+      <label for="name">price</label>
+      <input type="number" name="price" value="{{product.price}}" class="form-control" id="inputEmail4" placeholder="price">
+    </div>
+     <div class="form-group col-md-6">
+      <label for="img">img</label>
+      <img src="{{product.img}}" alt="">
+      <input type="text" name="img" value="{{product.img}}" class="form-control" id="inputEmail4" placeholder="img">
+    </div>
+  </div>
+ <button type="submit" class="row ml-4 btn btn-primary">Sign in</button>
+ 
+    
+</form>
+  
+   
+</div>
+
+</div>

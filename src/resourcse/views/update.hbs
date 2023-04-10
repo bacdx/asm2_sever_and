@@ -1,0 +1,25 @@
+  <form class="container" method="POST" action="/user/{{user._id}}/update?_method=PUT">
+   <div class="col-md-6">
+     <label title="Email" class="row">
+        <input type="text" name="email" value="{{user.email}}" placeholder="email">
+    </label>
+   </div>
+       <div class="col-md-6">
+         <label title="password" class="row">
+    <input type="password" name="password" value="{{user.password}}" placeholder="password">
+    </label>
+       </div>
+<div class="col-md-6">
+    <label title="name" class="row">
+        <input type="text" name="name" value="{{user.name}}" placeholder="name">
+    </label>
+</div>
+     </label>
+<label title="img" class="row">
+    <img src="{{user.img}}" style="width: 100px; height: 100px;" alt="">
+        <input type="text" name="img" value="{{user.img}}" placeholder="img">
+    </label>
+    <button type="submit" class="btn btn-primary">update</button>
+
+    
+</form>
